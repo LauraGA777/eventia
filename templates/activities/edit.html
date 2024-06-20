@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<head>
+    <title>Eventia - Editar</title>
+</head> 
+<h3 class="text-center mb-5 mt-5">Editar Evento</h3>
+
+<div>
+<form action="" method="post" class=" col-3 mx-auto">
+    {% csrf_token %}
+    {% include 'activities/form.html' %}
+    <button type="submit" class="btn btn-success" > Editar</button>
+    <a href="{% url 'activities' %}" class="btn btn-secondary">Volver</a>
+</form>
+</div>
+{% endblock %}

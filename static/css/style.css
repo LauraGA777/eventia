@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "Nunito";
+    src: url("../fonts/Nunito-Regular.eot");
+    src: local("Nunito Regular"), local("Nunito-Regular"), url("../fonts/Nunito-Regular.eot#iefix") format("embedded-opentype"), url("../fonts/Nunito-Regular.woff2") format("woff2"), url("../fonts/Nunito-Regular.woff") format("woff"), url("../fonts/Nunito-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+body{
+    font-family: 'Nunito', sans-serif;
+
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../images/1.jpg');
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    float: right;
+    list-style: none;
+    margin-top: 50px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a {
+color: #fff;
+text-decoration: none;
+padding: 5px 20px;
+font-family: 'Nunito';
+font-size: 16px;
+text-transform: uppercase;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+.logo{
+    float: left;
+    width: 50%;
+}
+.logo img{
+    width: 20%;
+    padding: 15px 0;
+}
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+    align-content: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+.welcome-text a:hover{
+    background: #fff;
+    color: #333;
+}
+
+/*resposive*/
+
+@media (max-width:600px){
+    .wrapper {
+width: 100%;
+}
+.logo {
+float: none;
+width: 50%;
+text-align: center;
+margin: auto;
+}
+img {
+width: 100%;
+}
+.nav-area {
+float: none;
+margin-top: 0;
+}
+.nav-area li a {
+padding: 5px;
+font-size: 11px;
+}
+.nav-area {
+text-align: center;
+}
+.welcome-text {
+width: 100%;
+height: auto;
+margin: 30% 0;
+}
+.welcome-text h1 {
+font-size: 30px;
+}
+}

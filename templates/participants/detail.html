@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<head>
+    <title>Eventia - Detalles</title>
+</head>
+
+<h1 class="text-center">Detalles del participante</h1>
+<br>
+
+<div class="card mx-auto col-3">
+    <div class="card-body">
+        <h4>{{participants.first_name}} {{participants.last_name}}</h4>
+        <br>
+        <h5>ID:</h5>
+        <p> {{participants.id}}</p>
+        <h5>Documento:</h5>
+        <p>{{participants.document}} </p>
+        <h5>Email:</h5>
+        <p>{{participants.email}} </p>
+        <h5>Estado:</h5>
+        <p class="badge bg-success">Activo</p>
+    </div>
+</div>
+
+<br>
+<div class="text-center">
+    <a href="{% url 'participants' %}" class="btn btn-secondary">Volver</a>
+</div>
+</form>
+
+{% endblock %}

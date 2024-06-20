@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<head>
+    <title>Eventia - Detalles</title>
+</head>
+
+<h1 class="text-center">Detalles del Evento</h1>
+<br>
+<div class="card mx-auto col-3">
+    <div class="card-body">
+        <h4>{{activities.name}}</h4>
+        <br>
+        <h5>Descripción:</h5>
+        <p>{{activities.description}}</p>
+        <h5>Fecha:</h5>
+        <p>{{activities.date}}</p>
+        <h5>Hora:</h5>
+        <p>{{activities.time}}</p>
+        <h5>Lugar:</h5>
+        <p>{{activities.location}}</p>
+    </div>
+</div>
+<br>
+<div class="text-center">
+    <a href="{% url 'activities' %}" class="btn btn-secondary">Volver</a>
+</div>
+
+</form>
+
+{% endblock %}
