@@ -27,4 +27,6 @@ urlpatterns = [
     path('', views.loguear, name='loguear'),
     path('activities/', include('activities.urls')),
     path('participants/', include('participants.urls')),
+    path('api/', include('participants.urls')),
+    path('api/', include('activities.urls')),
 ]
